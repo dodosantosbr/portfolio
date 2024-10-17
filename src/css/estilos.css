@@ -139,6 +139,31 @@ body {
     font-size: 45px;
     font-weight: 500;
     text-transform: uppercase;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+.projetos .titulo::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 4px;
+    background-color: #0fcfff;
+    transition: width 0.5s ease;
+}
+
+.projetos .titulo:hover::after {
+    width: 100%;
+}
+
+.projetos .titulo.aparecer {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .projetos .container-projetos {
@@ -229,60 +254,136 @@ body {
     text-align: center;
 }
 
-.home .pdf_download a i{
+.home .pdf_download a i {
     width: 10rem;
     height: 3.5rem;
     font-size: .8rem;
     border-radius: 8px;
     padding: 1.2rem 0;
     justify-content: center;
- }
-
-.skills_tecnologias {
-    width: 100%;
-    padding: 10px;
-    gap: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 20px;
-    font-family: "Poppins",
-        sans-serif;
 }
 
-.skills .skills_titulo {
-    font-family: "Rowdies",
-        sans-serif;
+.skills {
     text-align: center;
-    padding: 60px 0;
+    padding: 50px 0;
+}
+
+.skills_titulo {
+    font-family: "Rowdies", sans-serif;
     font-size: 45px;
     font-weight: 500;
     text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.skills_tecnologias {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills_tecnologias li {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+.skills_tecnologias img {
+    transition: transform 0.3s ease;
+}
+
+.skills_tecnologias img:hover {
+    transform: scale(1.2);
+}
+
+.sk {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.sk::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #00abfc;
+    transition: width 0.3s ease;
+}
+
+.skills_tecnologias li:hover .sk {
+    color: #00abfc; 
+    transform: scale(1.1);
+}
+
+.skills_tecnologias li:hover .sk::after {
+    width: 100%; 
+}
+
+
+.hobbies {
+    text-align: center;
+    padding: 20px;
+}
+
+.hobbies_titulo {
+    font-size: 40px;
+    margin-bottom: 20px;
 }
 
 .hobbies_lista {
-    width: 100%;
-    gap: 30px;
-    font-size: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    font-family: 'Poppins', sans-serif;
-    justify-content: center;
-    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.hobbies_lista li {
+    display: inline-block;
+    margin: 15px;
     text-align: center;
 }
 
-.hobbies .hobbies_titulo {
-    font-family: 'Rowdies',
-        sans-serif;
-    text-align: center;
-    padding: 60px 0;
-    font-size: 45px;
-    font-weight: 500;
-    text-transform: uppercase;
+.hobbies_lista img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.hobbies_lista img:hover {
+    transform: scale(1.1);
+}
+
+.idhob {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.idhob:hover {
+    color: #00abfc;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.idhob::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #00abfc;
+    transition: width 0.3s ease;
+}
+
+.idhob:hover::after {
+    width: 100%;
 }
 
 @keyframes gradient-animation {
