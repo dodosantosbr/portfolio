@@ -12,3 +12,7 @@ function esconderbtn() {
         botaoMostrarProjetos.classList.add('remover');
     });
 }
+
+window.onload = function() {
+    document.querySelector('.projetos .titulo').classList.add('aparecer');
+};
