@@ -112,15 +112,30 @@ body {
     transform: scale(1.1);
 }
 
-.home .container-foto .foto {
-    max-width: 325px;
-    border-radius: 19%;
+.home .container-foto {
+  width: 100%;
+  max-width: 350px;        
+  flex-shrink: 0;         
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
 }
 
-.home .container-foto img {
-    width: 100%;
-    border-radius: 15%;
-    display: flex;
+.home .container-foto .foto {
+  width: 100%;             
+  max-width: 355px;        
+  border-radius: 19%;
+  overflow: hidden;        
+  box-shadow: 0 0 15px rgba(0, 171, 252, 0.6); 
+  transition: transform 0.3s ease;
+}
+
+.home .container-foto .foto img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15%;
+  object-fit: cover;    
 }
 
 .home .foto.sombra-interna {
