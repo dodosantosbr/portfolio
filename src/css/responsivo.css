@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @media(max-width: 1280px) {
 
     .cabecalho {
@@ -38,4 +39,46 @@
     .projetos {
         padding: 30px;
     }
+=======
+@media(max-width: 1280px) {
+
+    .cabecalho {
+        padding: 30px;
+    }
+
+    .home {
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0;
+        gap: 30px;
+    }
+
+    .home .informacoes {
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .projetos .container-projetos {
+        padding: 0 30px;
+    }
+}
+
+@media(max-width: 425px) {
+    .home .informacoes h1 {
+        font-size: 30px;
+    }
+
+    .home .informacoes p {
+        font-size: 16px;
+    }
+
+    .home .container-foto img {
+        max-width: 320px;
+    }
+
+    .projetos {
+        padding: 30px;
+    }
+>>>>>>> 5c13d45 (Feat: foi adicionado as novas funcionalidades, alterado a cor do background e alterado as skills)
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -17,4 +18,25 @@ ul{
 
 img{
     max-width: 100%;
+=======
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+>>>>>>> 5c13d45 (Feat: foi adicionado as novas funcionalidades, alterado a cor do background e alterado as skills)
 }
