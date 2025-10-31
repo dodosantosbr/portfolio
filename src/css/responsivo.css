@@ -21,6 +21,22 @@
   }
 }
 
+@media (max-width: 768px) {
+  .card-skill {
+    width: 80px;
+    height: 80px;
+  }
+
+  .card-skill img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .card-skill p {
+    font-size: 0.75rem;
+  }
+}
+
 @media (max-width: 425px) {
   .home .informacoes h1 {
     font-size: 30px;
@@ -38,3 +54,5 @@
     padding: 30px;
   }
 }
+
+
