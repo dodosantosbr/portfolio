@@ -11,6 +11,9 @@ body {
   background-size: 170% 170%;
 }
 
+/* =========================================================
+   🌐 CABEÇALHO
+========================================================= */
 .cabecalho {
   display: flex;
   flex-wrap: wrap;
@@ -52,6 +55,9 @@ body {
   border-radius: 50px;
 }
 
+/* =========================================================
+   🏠 HOME
+========================================================= */
 .home {
   display: flex;
   min-height: calc(100vh - 125px);
@@ -140,15 +146,9 @@ body {
   animation: gradient-animation 5s ease infinite;
 }
 
-.home .pdf_download a i {
-  width: 10rem;
-  height: 3.5rem;
-  font-size: 0.8rem;
-  border-radius: 8px;
-  padding: 1.2rem 0;
-  justify-content: center;
-}
-
+/* =========================================================
+   🧱 PROJETOS
+========================================================= */
 .projetos {
   padding: 70px 0;
 }
@@ -261,6 +261,9 @@ body {
   display: none;
 }
 
+/* =========================================================
+   💠 SKILLS (CARDS ELEGANTES)
+========================================================= */
 .container_info-sobre {
   display: flex;
   flex-direction: column;
@@ -271,7 +274,7 @@ body {
 
 .skills {
   text-align: center;
-  padding: 50px 0;
+  padding: 60px 0;
 }
 
 .skills_titulo {
@@ -279,87 +282,77 @@ body {
   font-size: 45px;
   font-weight: 500;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   position: relative;
+}
+
+.skills_titulo::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 3px;
+  background-color: #0fcfff;
+  border-radius: 10px;
 }
 
 .skills_tecnologias {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .skills_tecnologias li {
-  display: inline-block;
-  margin: 20px;
-  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  width: 110px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(15, 207, 255, 0.15);
+  backdrop-filter: blur(6px);
+  transition: all 0.3s ease;
+}
+
+.skills_tecnologias li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(15, 207, 255, 0.4);
+  border-color: rgba(15, 207, 255, 0.5);
 }
 
 .skills_tecnologias img {
+  width: 40px;
+  height: 40px;
   transition: transform 0.3s ease;
 }
 
-.skills_tecnologias img:hover {
-  transform: scale(1.2);
+.skills_tecnologias li:hover img {
+  transform: scale(1.15);
 }
 
 .sk {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
   margin-top: 10px;
-  position: relative;
-  transition: color 0.3s ease, transform 0.3s ease;
-  cursor: pointer;
-}
-
-.sk::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 0;
-  height: 2px;
-  background-color: #00abfc;
-  transition: width 0.3s ease;
+  color: #fff;
+  transition: color 0.3s ease;
 }
 
 .skills_tecnologias li:hover .sk {
   color: #00abfc;
-  transform: scale(1.1);
 }
 
-.skills_tecnologias li:hover .sk::after {
-  width: 100%;
-}
-
-.idhob {
-  font-size: 18px;
-  font-weight: 600;
-  margin-top: 10px;
-  position: relative;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.idhob:hover {
-  color: #00abfc;
-  transform: scale(1.2);
-}
-
-.idhob::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 0;
-  height: 2px;
-  background-color: #00abfc;
-  transition: width 0.3s ease;
-}
-
-.idhob:hover::after {
-  width: 100%;
-}
-
+/* =========================================================
+   🎨 ANIMAÇÃO DE FUNDO
+========================================================= */
 @keyframes gradient-animation {
   0% {
     background-position: 0% 50%;
