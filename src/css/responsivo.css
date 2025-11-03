@@ -37,6 +37,137 @@
   }
 }
 
+/* =========================================================
+   📱 RESPONSIVIDADE - CELULARES PEQUENOS
+   (até 480px)
+========================================================= */
+@media (max-width: 480px) {
+  body {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  /* Cabeçalho */
+  .cabecalho {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .cabecalho .menu li a {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
+  /* Home */
+  .home {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    min-height: auto;
+  }
+
+  .home .informacoes {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .home .informacoes h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+  .home .informacoes p {
+    font-size: 16px;
+  }
+
+  .home .container-foto {
+    max-width: 220px;
+    width: 100%;
+  }
+
+  .home .container-foto .foto {
+    max-width: 220px;
+    border-radius: 20%;
+  }
+
+  .home .container-foto .foto img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* evita corte */
+  }
+
+  .home .redes-sociais {
+    gap: 15px;
+  }
+
+  .home .redes-sociais a i {
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+  }
+
+  /* Skills */
+  .skills_titulo {
+    font-size: 28px;
+  }
+
+  .skills_tecnologias {
+    gap: 10px;
+  }
+
+  .skills_tecnologias li {
+    width: 90px;
+    height: 100px;
+  }
+
+  .skills_tecnologias img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .sk {
+    font-size: 13px;
+  }
+
+  /* Projetos */
+  .projetos .titulo {
+    font-size: 28px;
+    padding: 30px 0;
+  }
+
+  .projetos .container-projetos {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .projetos .projeto {
+    max-width: 90%;
+    max-height: none;
+  }
+
+  .projetos .projeto img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* evita corte nas miniaturas */
+  }
+
+  .projetos .projeto h3 {
+    font-size: 16px;
+    padding-left: 10px;
+  }
+
+  .projetos .btn-mostrar-projetos {
+    width: 140px;
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+
+
 @media (max-width: 425px) {
   .home .informacoes h1 {
     font-size: 30px;
