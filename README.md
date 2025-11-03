@@ -7,6 +7,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
+<img width="855" height="408" alt="image" src="https://github.com/user-attachments/assets/fe843ced-a62d-4e42-9183-df297b7f8948" />
+
+
 Portfólio simples e com ferramentas básicas.
 
 ## 🔗 Deploy
